@@ -1,5 +1,7 @@
 To set up the project, follow these steps:
 
+Before proceeding, ensure you have Composer installed. If not, visit "https://getcomposer.org/" and follow their instructions to get it set up.
+
 1. Place the project's files into your server's main directory where you plan to host it.
 
 2. Inside the main project folder, find the file named ".env.example" and rename it to ".env".<br/>
