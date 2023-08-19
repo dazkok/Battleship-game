@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/game','App\Http\Controllers\GameController@start')->name('game');
+Route::get('/endgame','App\Http\Controllers\GameController@endGame')->name('endgame');
+Route::get('/{p_link?}','App\Http\Controllers\HomeController@home')->name('home');
+
+// gamepad
+Route::post('/hit','App\Http\Controllers\GameController@hitSquare')->name('hit');
+Route::post('/shots-count','App\Http\Controllers\GameController@getShotsCounter')->name('shots-count');
